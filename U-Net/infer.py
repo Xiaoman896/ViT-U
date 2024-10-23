@@ -5,9 +5,9 @@ import sys, os, time, argparse, shutil, scipy, h5py, glob
 parser = argparse.ArgumentParser(description='Model use')
 parser.add_argument('-gpus',  type=str, default="1", help='list of visiable GPUs')
 parser.add_argument('-mdl', type=str, default='train-dataset-processedby-ViT-L1/U-Net-it02400.h5', help='Experiment name')
-parser.add_argument('-dsfn',type=str, default='../Dataset/241train-scaffolds-sparse2noise.h5', help='h5 dataset file')
+parser.add_argument('-dsfn',type=str, default='../Dataset/test-dataset-processedby-ViT.h5', help='h5 dataset file')
 parser.add_argument('-depth', type=int, default=3, help='input depth (use for 3D CT image only)')
-parser.add_argument('-dnfn',type=str, default='../InferredData/241train-scaffolds-noise2inverse-120LD-1500P-S4_dn_02400.h5')
+parser.add_argument('-dnfn',type=str, default='../InferredData/test-dataset-processedby-ViT-U-Net_it_02400.h5')
 args, unparsed = parser.parse_known_args()
 if len(unparsed) > 0:
     print('Unrecognized argument(s): \n%s \nProgram exiting ... ... ' % '\n'.join(unparsed))
