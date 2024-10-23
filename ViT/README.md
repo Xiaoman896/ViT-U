@@ -1,7 +1,7 @@
 # Vision Transformer (ViT) fills gaps in the sinogram domain
 
 ## Create a New Environment from the YAML File
-conda env create -f environment.yml
+conda env create -f environment.yaml
 ## Train a ViT model
 python main-ViT.py
 
