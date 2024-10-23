@@ -1,0 +1,22 @@
+
+dataset:
+  norm: False
+  mean4norm: 40376.66611018648
+  std4norm: 12226.56805927163
+  input: 'sino_missing_wg'
+  target: 'sino_full'
+  vh5:  '../dataset/ds-simu-scaffold-p3-bin2-validate-50-norm.h5'
+  th5:  '../dataset/ds-simu-scaffold-p3-bin2-train-450-norm.h5'
+
+  load2ram: True
+
+train:
+  mbsz: 1
+  maxep: 2000
+  lr: 0.001
+  ckp_steps: 10
+
+model:
+  enc_emb_dim: 512
+  enc_nlayer: 6 
+  enc_nhead: 16
