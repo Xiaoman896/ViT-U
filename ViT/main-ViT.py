@@ -1,5 +1,5 @@
 
-# torchrun --standalone --nnodes=1 --nproc_per_node=8  ./main-ddp.py -cfg=config/simu.yaml -expName=simu
+# torchrun --standalone --nnodes=1 --nproc_per_node=8  ./main-ViT.py -cfg=config/ViT.yaml -expName=ViT
 
 from model_ViT import SVTx
 import torch, argparse, os, time, sys, shutil, yaml, scipy.io
